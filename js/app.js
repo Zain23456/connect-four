@@ -15,7 +15,7 @@ console.log(divEls)
 
 
 /*-------------------------------- Functions --------------------------------*/
-
+//function init(){}
 for (let i = 0; i < 42; i++) {
   let divEl = document.createElement('div')
   divEl.className = 'slot'
