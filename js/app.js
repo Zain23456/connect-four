@@ -16,7 +16,7 @@ console.log(divEls)
 
 /*-------------------------------- Functions --------------------------------*/
 
-for (let i = 0; i < 41; i++) {
+for (let i = 0; i < 42; i++) {
   let divEl = document.createElement('div')
   divEl.className = 'slot'
   divEls.appendChild(divEl)
