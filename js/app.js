@@ -73,39 +73,58 @@ const winningArrays = [
 //https://github.com/kubowania/connect-four/blob/master/app.js
 
 /*---------------------------- Variables (state) ----------------------------*/
-
+let board, winner, turn
 
 
 /*-------------- Cached Element References -----------------------------------*/
-const divEls = document.querySelector('#grid')
-const messafeEl = document.querySelector('#message')
-//console.log(divEls)
+const divEls = document.querySelectorAll('.cell')
+const messageEl = document.querySelector('#message')
+console.log(divEls)
 /*----------------------------- Event Listeners -----------------------------*/
 
 
 
 /*-------------------------------- Functions --------------------------------*/
+init()
+
 function init(){
-  board = [null, null, null, null, null. null, null,
-    null, null, null, null, null. null, null,
-    null, null, null, null, null. null, null,
-    null, null, null, null, null. null, null,
-    null, null, null, null, null. null, null,
-    null, null, null, null, null. null, null]
+  board = [null, null, null, null, null, null, null,
+    null, null, null, null, null, null, null,
+    null, null, null, null, null, null, null,
+    null, null, null, null, null, null, null,
+    null, null, null, null, null, null, null,
+    null, null, null, null, null, null, null]
 
   turn = 1
   winner = null
-  messafeEl.textContent =  `Player Red starts`
+  messageEl.textContent =  'Player Red starts'
   render()
 
   }
 
 function render() {
-  board.
+  board.forEach((element, idx) => {
+    if (element === 1){
+      divEls[idx].style.backgroundColor = 'red'
+    }
+    else if (element === -1) {
+      divEls[idx].style.backgroundColor = 'yellow'
+    }
+    else if (element === null) {
+      divEls[idx].style.backgroundColor = 'white'
+    }
+  })
+  if (winner === null) {
+    messageEl.textContent = `Player ${turn === 1 ? 'Red' : 'Yellow'} your turn`
+  } else if (winner === 'T') {
+    messageEl.textContent = 'It is a draw'
+  }else {
+    messageEl.textContent = `Player ${winner === 1 ? 'Red' : 'Yellow'} has won!!`
+  }
 }
 
-for (let i = 0; i < 42; i++) {
-  let divEl = document.createElement('div')
-  divEl.className = 'slot'
-  divEls.appendChild(divEl)
-}
+// for (let i = 0; i < 42; i++) {
+//   let divEl = document.createElement('div')
+//   divEl.className = 'slot'
+//   divEls.appendChild(divEl)
+// }
