@@ -79,10 +79,14 @@ let board, winner, turn
 /*-------------- Cached Element References -----------------------------------*/
 const divEls = document.querySelectorAll('.cell')
 const messageEl = document.querySelector('#message')
-console.log(divEls)
+const resetBtn = document.querySelector('#restart')
+
+//console.log(divEls)
 /*----------------------------- Event Listeners -----------------------------*/
-
-
+divEls.forEach(div => {
+  div.addEventListener('click', handleClick)
+})
+resetBtn.addEventListener('click', init)
 
 /*-------------------------------- Functions --------------------------------*/
 init()
@@ -103,14 +107,14 @@ function init(){
   }
 
 function render() {
-  board.forEach((element, idx) => {
-    if (element === 1){
+  board.forEach((div, idx) => {
+    if (div === 1){
       divEls[idx].style.backgroundColor = 'red'
     }
-    else if (element === -1) {
+    else if (div === -1) {
       divEls[idx].style.backgroundColor = 'yellow'
     }
-    else if (element === null) {
+    else if (div === null) {
       divEls[idx].style.backgroundColor = 'white'
     }
   })
@@ -123,6 +127,27 @@ function render() {
   }
 }
 
+function handleClick(evt) {
+  let divIdx = evt.target.id
+  if (board[divIdx] || winner) {
+    return
+  }
+  board[divIdx] = turn
+  turn *= -1
+  winner = getWinner()
+  render()
+}
+
+function getWinner() {
+  for (let i = 0; i < winningArrays.length; i++) {
+    if (Math.abs(board[winningArrays[i][0]] + board[winningArrays[i][1]] + board[winningArrays[i][2]] + board[winningArrays[i][3]])  === 4) {
+      
+      return board[winningArrays[i][0]]
+    } 
+  }
+  const result = !board.includes(null)
+  return result ? 'T' : null
+}
 // for (let i = 0; i < 42; i++) {
 //   let divEl = document.createElement('div')
 //   divEl.className = 'slot'
