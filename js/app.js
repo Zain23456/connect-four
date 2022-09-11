@@ -92,12 +92,13 @@ resetBtn.addEventListener('click', init)
 init()
 
 function init(){
-  board = [null, null, null, null, null, null, null,
+  board = [
     null, null, null, null, null, null, null,
     null, null, null, null, null, null, null,
     null, null, null, null, null, null, null,
     null, null, null, null, null, null, null,
-    null, null, null, null, null, null, null]
+    null, null, null, null, null, null, null,
+  0, 0, 0, 0, 0, 0, 0]
 
   turn = 1
   winner = null
@@ -128,11 +129,18 @@ function render() {
 }
 
 function handleClick(evt) {
-  let divIdx = evt.target.id
-  if (board[divIdx] || winner) {
+  if (winner || board[divIdx]) {
     return
   }
+  let divIdx = parseInt(evt.target.id)
+  while(board[divIdx] !== 0) {
+    divIdx += 7
+    console.log(divIdx)
+  }
+    console.log(divEls.length)
+  
   board[divIdx] = turn
+  board[divIdx -7] = 0
   turn *= -1
   winner = getWinner()
   render()
@@ -148,8 +156,14 @@ function getWinner() {
   const result = !board.includes(null)
   return result ? 'T' : null
 }
-// for (let i = 0; i < 42; i++) {
+// function createGrid() {
+//  for (let i = 0; i < 49; i++) {
 //   let divEl = document.createElement('div')
 //   divEl.className = 'slot'
+//    devEl.setAttribute('id', i)
+//    if (i > 42) {
+//         div.className='filled'
+//      }
 //   divEls.appendChild(divEl)
 // }
+//}
