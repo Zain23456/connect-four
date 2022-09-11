@@ -98,12 +98,13 @@ function init(){
     null, null, null, null, null, null, null,
     null, null, null, null, null, null, null,
     null, null, null, null, null, null, null,
-  0, 0, 0, 0, 0, 0, 0]
+    0, 0, 0, 0, 0, 0, 0]
 
   turn = 1
   winner = null
   messageEl.textContent =  'Player Red starts'
   render()
+  
 
   }
 
@@ -115,7 +116,7 @@ function render() {
     else if (div === -1) {
       divEls[idx].style.backgroundColor = 'yellow'
     }
-    else if (div === null) {
+    else {
       divEls[idx].style.backgroundColor = 'white'
     }
   })
@@ -126,19 +127,18 @@ function render() {
   }else {
     messageEl.textContent = `Player ${winner === 1 ? 'Red' : 'Yellow'} has won!!`
   }
+  // console.log(board[46])
 }
 
 function handleClick(evt) {
-  if (winner || board[divIdx]) {
+  let divIdx = parseInt(evt.target.id)
+  if (winner) {
     return
   }
-  let divIdx = parseInt(evt.target.id)
+
   while(board[divIdx] !== 0) {
     divIdx += 7
-    console.log(divIdx)
   }
-    console.log(divEls.length)
-  
   board[divIdx] = turn
   board[divIdx -7] = 0
   turn *= -1
