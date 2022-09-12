@@ -71,6 +71,7 @@ const winningArrays = [
   [13, 20, 27, 34],
 ]
 //https://github.com/kubowania/connect-four/blob/master/app.js
+
 /*---------------------------- Variables (state) ----------------------------*/
 let board, winner, turn
 
