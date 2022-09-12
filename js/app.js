@@ -136,6 +136,11 @@ function handleClick(evt) {
 
   while(board[divIdx] !== 0) {
     divIdx += 7
+    if(divIdx > 42){
+      return
+    }
+    //console.log(divIdx)
+    
   }
   board[divIdx] = turn
   board[divIdx -7] = 0
