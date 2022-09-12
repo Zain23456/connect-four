@@ -45,10 +45,10 @@ function render() {
       divEls[idx].style.backgroundColor = '#f33bee'
     }
     else if (div === -1) {
-      divEls[idx].style.backgroundColor = '#deff00'
+      divEls[idx].style.backgroundColor = '#eef33b'
     }
     else {
-      divEls[idx].style.backgroundColor = 'white'
+      divEls[idx].style.backgroundColor = '#ffffff'
     }
   })
   if (winner === null) {
