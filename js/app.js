@@ -110,10 +110,10 @@ function init(){
 function render() {
   board.forEach((div, idx) => {
     if (div === 1){
-      divEls[idx].style.backgroundColor = 'red'
+      divEls[idx].style.backgroundColor = '#f33bee'
     }
     else if (div === -1) {
-      divEls[idx].style.backgroundColor = 'yellow'
+      divEls[idx].style.backgroundColor = '#deff00'
     }
     else {
       divEls[idx].style.backgroundColor = 'white'
