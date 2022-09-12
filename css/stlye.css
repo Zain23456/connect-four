@@ -47,8 +47,8 @@ h3 {
   background-color: #656663;
   border-radius: 5px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(6, 1fr);
   margin-left: 30px;
 }
 
@@ -78,7 +78,4 @@ h3 {
     width: auto
   }
 
-  #restart {
-    color:#000000;
-  }
 }
