@@ -101,7 +101,7 @@ function init(){
 
   turn = 1
   winner = null
-  messageEl.textContent =  'Player Red starts'
+  messageEl.innerHTML =  'Player Red starts'
   render()
   
 
