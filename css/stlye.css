@@ -33,6 +33,7 @@ h3 {
 
 .card {
   margin: 10px;
+  background-color: aqua;
 }
 
 #message {
@@ -60,6 +61,8 @@ h3 {
 #restart {
   margin: 10px;
   border-radius: 10px;
+  background-color: aqua;
+  box-shadow: 3px 2px 3px #999;
 }
 
 @media only screen and (min-width: 768px) {

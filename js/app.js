@@ -141,7 +141,6 @@ function handleClick(evt) {
       return
     }
     //console.log(divIdx)
-    
   }
   board[divIdx] = turn
   board[divIdx -7] = 0
