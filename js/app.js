@@ -71,7 +71,6 @@ const winningArrays = [
   [13, 20, 27, 34],
 ]
 //https://github.com/kubowania/connect-four/blob/master/app.js
-
 /*---------------------------- Variables (state) ----------------------------*/
 let board, winner, turn
 
@@ -127,7 +126,6 @@ function render() {
   }else {
     messageEl.textContent = `Player ${winner === 1 ? 'Red' : 'Yellow'} has won!!`
   }
-  // console.log(board[46])
 }
 
 function handleClick(evt) {
@@ -157,11 +155,11 @@ function getWinner() {
   return result ? 'T' : null
 }
 // function createGrid() {
-//  for (let i = 0; i < 49; i++) {
+//  for (let i = 0; i < 42; i++) {
 //   let divEl = document.createElement('div')
 //   divEl.className = 'slot'
 //    devEl.setAttribute('id', i)
-//    if (i > 42) {
+//    if (i > 35) {
 //         div.className='filled'
 //      }
 //   divEls.appendChild(divEl)
