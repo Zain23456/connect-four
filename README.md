@@ -1,6 +1,5 @@
-# connect-four
+# Connect Four Game
 
-Title: Connect Four Game
 
 A two player game in which you must match four game pieces in a row
 
