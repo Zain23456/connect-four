@@ -1,7 +1,8 @@
 import { winningArrays } from "./data/winningArrays.js"
 
 /*-------------------------------- Constants --------------------------------*/
-
+const resetSound = new Audio("./Audio/mixkit-cartoon-toy-whistle-616.wav")
+const intro = new Audio("./Audio/relaxing-light-background-116686.mp3")
 
 /*---------------------------- Variables (state) ----------------------------*/
 let board, winner, turn
@@ -12,7 +13,7 @@ const divEls = document.querySelectorAll('.cell')
 const messageEl = document.querySelector('#message')
 const resetBtn = document.querySelector('#restart')
 
-const resetSound = new Audio("./Audio/mixkit-cartoon-toy-whistle-616.wav")
+
 /*----------------------------- Event Listeners -----------------------------*/
 divEls.forEach(div => {
   div.addEventListener('click', handleClick)
@@ -38,6 +39,9 @@ function init(){
   turn = 1
   winner = null
   messageEl.innerHTML =  'Player Red starts'
+
+  intro.play()
+  intro.volume = .3
   render()
   
 
