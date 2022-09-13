@@ -46,6 +46,7 @@ p {
 .grid-div {
   display: flex;
   justify-content: center;
+  /* padding: 50px; */
 }
 
 #grid {
@@ -77,11 +78,22 @@ p {
 @media only screen and (min-width: 768px) {
   body {
     width: 100%;
-    display: grid;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #grid, .grid-div {
+    width: 600px;
+    height: 400px;
+  }
+
+  header, #restart {
+    width: 100%;
   }
 
   .card {
     text-align: center;
+    font-size: 24px;
   }
 
   #restart {

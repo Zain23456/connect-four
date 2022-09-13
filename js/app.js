@@ -3,7 +3,7 @@ import { winningArrays } from "./data/winningArrays.js"
 /*-------------------------------- Constants --------------------------------*/
 const resetSound = new Audio("./Audio/mixkit-cartoon-toy-whistle-616.wav")
 const intro = new Audio("./Audio/relaxing-light-background-116686.mp3")
-
+const winSound = new Audio('./Audio/mixkit-video-game-win-2016.wav')
 /*---------------------------- Variables (state) ----------------------------*/
 let board, winner, turn
 
@@ -50,7 +50,7 @@ function init(){
 
     setTimeout(() => {
     intro.pause()
-    }, 11000)
+    }, 15000)
   }
 
 function render() {
@@ -72,6 +72,7 @@ function render() {
   }else {
     messageEl.textContent = `Player ${winner === 1 ? 'Red' : 'Yellow'} has won!!`
     confetti.start(3000)
+    winSound.play()
   }
 }
 
@@ -80,12 +81,9 @@ function handleClick(evt) {
   if (winner) {
     return
   }
-
   while(board[divIdx] !== 0) {
     divIdx += 7
-    if(divIdx > 42){
-      return
-    }
+    if(divIdx > 42) return
   }
   board[divIdx] = turn
   board[divIdx -7] = 0
@@ -98,7 +96,7 @@ function getWinner() {
   for (let i = 0; i < winningArrays.length; i++) {
     if (Math.abs(board[winningArrays[i][0]] + board[winningArrays[i][1]] + board[winningArrays[i][2]] + board[winningArrays[i][3]])  === 4) {
       
-      return board[winningArrays[i][0]]
+    return board[winningArrays[i][0]]
     } 
   }
   const result = !board.includes(null)
