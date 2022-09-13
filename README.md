@@ -21,3 +21,7 @@ https://github.com/kubowania/connect-four/blob/master/app.js
 -https://animate.style/
 
 -https://github.com/SEI-Remote/confetti
+
+Audio:
+Relaxing Light Background
+-https://pixabay.com/music/search/mood/uplifting/
