@@ -50,7 +50,7 @@ function init(){
 
     setTimeout(() => {
     intro.pause()
-    }, 15000)
+    }, 35000)
   }
 
 function render() {
@@ -83,7 +83,9 @@ function handleClick(evt) {
   }
   while(board[divIdx] !== 0) {
     divIdx += 7
-    if(divIdx > 42) return
+    if(divIdx > 42) {
+      return
+    }
   }
   board[divIdx] = turn
   board[divIdx -7] = 0

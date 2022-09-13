@@ -87,7 +87,7 @@ p {
     height: 400px;
   }
 
-  header, #restart {
+  header {
     width: 100%;
   }
 
@@ -98,5 +98,6 @@ p {
 
   #restart {
     box-shadow: none;
+    width: 70%
   }
 }
