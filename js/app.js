@@ -39,7 +39,6 @@ function init(){
   turn = 1
   winner = null
   messageEl.innerHTML =  'Player Red starts'
-
   playAudio()
   render()
   }
