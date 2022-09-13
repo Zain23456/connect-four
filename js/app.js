@@ -40,11 +40,17 @@ function init(){
   winner = null
   messageEl.innerHTML =  'Player Red starts'
 
-  intro.play()
-  intro.volume = .2
+  playAudio()
   render()
-  
+  }
 
+  function playAudio() {
+    intro.play()
+    intro.volume = .2
+
+    setTimeout(function() {
+    intro.pause()
+    }, 11000)
   }
 
 function render() {
