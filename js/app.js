@@ -48,7 +48,7 @@ function init(){
     intro.play()
     intro.volume = .2
 
-    setTimeout(function() {
+    setTimeout(() => {
     intro.pause()
     }, 11000)
   }
@@ -86,7 +86,6 @@ function handleClick(evt) {
     if(divIdx > 42){
       return
     }
-    //console.log(divIdx)
   }
   board[divIdx] = turn
   board[divIdx -7] = 0
