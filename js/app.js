@@ -12,12 +12,16 @@ const divEls = document.querySelectorAll('.cell')
 const messageEl = document.querySelector('#message')
 const resetBtn = document.querySelector('#restart')
 
-//console.log(divEls)
+const resetSound = new Audio("./Audio/mixkit-cartoon-toy-whistle-616.wav")
 /*----------------------------- Event Listeners -----------------------------*/
 divEls.forEach(div => {
   div.addEventListener('click', handleClick)
 })
 resetBtn.addEventListener('click', init)
+
+resetBtn.addEventListener('click', e => {
+  resetSound.play()
+})
 
 /*-------------------------------- Functions --------------------------------*/
 init()

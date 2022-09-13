@@ -1,5 +1,4 @@
 # Connect Four Game
-
 -A two player game in which you must match four game pieces in a row
 
 ## Getting Started
@@ -14,3 +13,7 @@
 -JavaScript, HTML, CSS
 
 ## Next Steps(icebox)
+
+## Credit
+-WinningArrays from Ania Kubow:
+https://github.com/kubowania/connect-four/blob/master/app.js
