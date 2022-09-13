@@ -41,7 +41,7 @@ function init(){
   messageEl.innerHTML =  'Player Red starts'
 
   intro.play()
-  intro.volume = .3
+  intro.volume = .2
   render()
   
 
@@ -65,6 +65,7 @@ function render() {
     messageEl.textContent = 'It is a draw'
   }else {
     messageEl.textContent = `Player ${winner === 1 ? 'Red' : 'Yellow'} has won!!`
+    confetti.start(3000)
   }
 }
 

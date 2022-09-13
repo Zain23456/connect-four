@@ -17,3 +17,7 @@
 ## Credit
 -WinningArrays from Ania Kubow:
 https://github.com/kubowania/connect-four/blob/master/app.js
+
+-https://animate.style/
+
+-https://github.com/SEI-Remote/confetti
