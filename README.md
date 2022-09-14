@@ -16,6 +16,7 @@
 
 ## Credit
 -WinningArrays from Ania Kubow:
+
 https://github.com/kubowania/connect-four/blob/master/app.js
 
 -https://animate.style/
@@ -25,3 +26,6 @@ https://github.com/kubowania/connect-four/blob/master/app.js
 Audio:
 Relaxing Light Background
 -https://pixabay.com/music/search/mood/uplifting/
+
+_new Game Sound_
+-https://mixkit.co/free-sound-effects/game/

@@ -1,7 +1,7 @@
 import { winningArrays } from "./data/winningArrays.js"
 
 /*-------------------------------- Constants --------------------------------*/
-const resetSound = new Audio("./Audio/mixkit-cartoon-toy-whistle-616.wav")
+const resetSound = new Audio("./Audio/mixkit-unlock-game-notification-253.wav")
 const intro = new Audio("./Audio/relaxing-light-background-116686.mp3")
 const winSound = new Audio('./Audio/mixkit-video-game-win-2016.wav')
 /*---------------------------- Variables (state) ----------------------------*/
@@ -49,7 +49,7 @@ function init(){
 
     setTimeout(() => {
     intro.pause()
-    }, 30000)
+    }, 35000)
   }
 
 function render() {
