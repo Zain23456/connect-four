@@ -1,5 +1,5 @@
 # Connect Four Game
--A two player game in which you must match four game pieces in a row
+-A two player game in which you must match four game pieces in a row. A game that takes me back to family game night.
 
 ## Getting Started
 - Deployment: https://zain-connect-four.netlify.app/
@@ -12,15 +12,13 @@
 ## Technologies Used
 -JavaScript, HTML, CSS
 
-## Next Steps(icebox)
-
 ## Credit
 -WinningArrays from Ania Kubow:
 
 https://github.com/kubowania/connect-four/blob/master/app.js
 
+Animation from
 -https://animate.style/
-
 -https://github.com/SEI-Remote/confetti
 
 Audio:
