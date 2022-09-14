@@ -49,7 +49,7 @@ function init(){
 
     setTimeout(() => {
     intro.pause()
-    }, 35000)
+    }, 30000)
   }
 
 function render() {
