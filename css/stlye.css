@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
-html {
+/* html {
   box-sizing: border-box;
-}
+} */
 
 body {
   background-color: #000000;
@@ -33,7 +33,7 @@ p {
 }
 
 .card {
-  margin: 10px;
+  margin: 20px 10px;
   background-color: #3beef3;
   font-size: 18px;
 }
@@ -62,13 +62,14 @@ p {
 }
 
 .cell {
-  border: 1px solid #bbbbbb;
+  /* border: 1px solid #bbbbbb; */
   border-radius: 50%;
   background-color: #aaaaaa;
+  margin: 2px;
 }
 
 #restart {
-  margin: 10px;
+  margin: 20px 10px;
   border-radius: 10px;
   background-color: #3beef3;
   box-shadow: 3px 2px 3px #999;
@@ -98,6 +99,6 @@ p {
 
   #restart {
     box-shadow: none;
-    width: 70%
+    width: 60%
   }
 }

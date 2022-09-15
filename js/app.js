@@ -38,7 +38,7 @@ function init(){
 
   turn = 1
   winner = null
-  messageEl.innerHTML =  'Player Red starts'
+  messageEl.innerHTML =  'Player Pink starts'
   playAudio()
   render()
   }
@@ -65,11 +65,11 @@ function render() {
     }
   })
   if (winner === null) {
-    messageEl.textContent = `Player ${turn === 1 ? 'Red' : 'Yellow'} your turn`
+    messageEl.textContent = `Player ${turn === 1 ? 'Pink' : 'Yellow'} your turn`
   } else if (winner === 'T') {
     messageEl.textContent = 'It is a draw'
   }else {
-    messageEl.textContent = `Player ${winner === 1 ? 'Red' : 'Yellow'} has won!!`
+    messageEl.textContent = `Player ${winner === 1 ? 'Pink' : 'Yellow'} has won!!`
     confetti.start(3000)
     winSound.play()
   }
