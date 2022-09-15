@@ -7,8 +7,6 @@
 ## ScreenShots
 ![Ald text](./ASSETS/Connect%204-Mobile%20Display.png)
 
-![Ald text](./ASSETS/Connect%20Four-Wireframe.png)
-
 ## Technologies Used
 -JavaScript, HTML, CSS
 

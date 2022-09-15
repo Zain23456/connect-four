@@ -25,6 +25,10 @@ header {
   padding: 10px 20px;
 }
 
+#instructions {
+  color: black;
+}
+
 p {
   font-size: 18px;
   text-align: center;
