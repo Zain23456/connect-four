@@ -103,14 +103,3 @@ function getWinner() {
   const result = !board.includes(null)
   return result ? 'T' : null
 }
-// function createGrid() {
-//  for (let i = 0; i < 42; i++) {
-//   let divEl = document.createElement('div')
-//   divEl.className = 'slot'
-//    devEl.setAttribute('id', i)
-//    if (i > 35) {
-//         div.className='filled'
-//      }
-//   divEls.appendChild(divEl)
-// }
-//}
