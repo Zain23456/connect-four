@@ -17,9 +17,9 @@ Planning Material:
 - Javascript, CSS, Bootstrap, HTML
 
 ### Credit
-[WinningArrays from Ania Kubow](https://github.com/kubowania/connect-four/blob/master/app.js)
-Animation from
+1. [WinningArrays from Ania Kubow](https://github.com/kubowania/connect-four/blob/master/app.js)
+2. Animation:
 -https://animate.style/
 -https://github.com/SEI-Remote/confetti
-Audio:
+3. Audio:
 [Relaxing Light Background](https://pixabay.com/music/search/mood/uplifting/) [new Game Sound](https://mixkit.co/free-sound-effects/game/)
