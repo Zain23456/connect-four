@@ -16,6 +16,10 @@ Planning Material:
 ## Technologies Used
 - Javascript, CSS, Bootstrap, HTML
 
+## Next Steps
+- Light mode
+- landing page
+
 ### Credit
 1. [WinningArrays from Ania Kubow](https://github.com/kubowania/connect-four/blob/master/app.js)
 2. Animation:
