@@ -38,7 +38,7 @@ function init(){
 
   turn = 1
   winner = null
-  messageEl.innerHTML =  'Player Pink starts'
+  messageEl.innerHTML =  'Player Pink Starts'
   playAudio()
   render()
   }

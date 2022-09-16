@@ -14,7 +14,7 @@ Planning Material:
 ---
 
 ## Technologies Used
-- Javascript, CSS, Bootstrap, HTML
+- Javascript, CSS, HTML
 
 ## Next Steps
 - Light mode
