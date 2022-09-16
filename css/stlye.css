@@ -52,7 +52,7 @@ p {
 .grid-div {
   display: flex;
   justify-content: center;
-  padding: 50px;
+  align-items: center;
 }
 
 #grid {
